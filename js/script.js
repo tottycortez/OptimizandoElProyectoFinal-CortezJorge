@@ -50,7 +50,7 @@ btnCrearUsuario.addEventListener("click",()=> {
 btnAcceso.addEventListener("click",()=> {
     /// TRAIGO LOS VALORES QUE LLEVE AL LOCAL
     const traerUsuarios = localStorage.getItem("usuarios")
-    console.log(JSON.parse(traerUsuarios))
+    // console.log(JSON.parse(traerUsuarios))
     /// EL NUEVO ARRAY QUE TRAGIO CON LOS DATOS QUE SE GUARDARON
     const usuariosArrays = JSON.parse(localStorage.getItem("usuarios"))
     console.log(traerUsuarios)
@@ -63,6 +63,7 @@ btnAcceso.addEventListener("click",()=> {
         return elem.nombre === nombre}
     )
 
+    
     if (usuario == undefined || pass != usuario.pass) {
         alertaP(1)
         return
