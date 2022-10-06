@@ -63,11 +63,12 @@ btnAcceso.addEventListener("click",()=> {
         return elem.nombre === nombre}
     )
 
-    
+    // verifico que los datos sean correctos
     if (usuario == undefined || pass != usuario.pass) {
         alertaP(1)
         return
     }
+
 
     // ANTES DE REDIRIGIR CON LOCATION
     // Tengo que guardar en storage para pasarle info al otro html
